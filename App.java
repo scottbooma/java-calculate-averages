@@ -9,7 +9,7 @@ class App {
   System.out.println(String.format("The median score is %f", App.medianScore(scores)));
   }
 
-  private static int[] scores = {72, 95, 91, 85, 87, 51, 65, 72, 75, 89};
+  private static int[] scores = {72, 95, 91, 85, 87, 51, 65, 72, 75};
   
   private static int lowestScore(int[] scoreArray){
     Arrays.sort(scoreArray);
@@ -29,8 +29,8 @@ class App {
     return sum / scoreArray.length;
   }
 
-  private static double medianScore(int[] scoreArray){
-    return (scoreArray[scoreArray.length / 2] + scoreArray[(scoreArray.length / 2) - 1]) / 2;
+  private static float medianScore(int[] scoreArray){
+    return (scoreArray[scoreArray.length / 2] + scoreArray[(scoreArray.length / 2) - 1]) / (float) 2;
   }
 };
 
